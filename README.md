@@ -37,7 +37,7 @@ Once running, you can input paths to be checked. Press Enter on an empty line to
 ## Example
 
 ```
-agent-suid
+$ agent-suid
 
 Agent-SUID v1.0 by CyberGhoul -  the ultimate tool for discovering SUID binaries on your system. This tool is designed to help security professionals identify potential privilege escalation vectors.
         
