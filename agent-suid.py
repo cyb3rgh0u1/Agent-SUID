@@ -1284,7 +1284,7 @@ def main():
 
     try:
 
-        intro = '''\nAgent-SUID v1.0 by CyberGhoul - the ultimate tool for discovering SUID binaries on your system. This tool is designed to help security professionals identify potential privilege escalation vectors.
+        intro = '''\nAgent-SUID v1.0 by CyberGhoul - the ultimate tool for discovering exploitable SUID binaries on your system. This tool is designed to help security professionals identify potential privilege escalation vectors.
         '''
         print(intro)
         
@@ -1303,7 +1303,11 @@ def main():
         matches = [name for name in extracted_names if name in wordlist]
 
         # Output the results
-        print(f"\nSUID Binaries Overview: {len(matches)} found")
+        if len(matches) == 1:
+           print(f"\nExploitable SUID Binaries Overview: {len(matches)} found")
+        else:
+           print(f"\nExploitable SUID Binaries Overview: {len(matches)} founds")
+
         print("Details on privilege escalation techniques:\n")
         for match in matches:
           if match in commands:
