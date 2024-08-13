@@ -61,7 +61,7 @@ Enter paths one per line (press Enter on an empty line to finish):
 /bin/vim
 
 
-SUID Binaries Overview: 1 found
+Exploitable SUID Binaries Overview: 1 found
 Details on privilege escalation techniques:
 
 -------------------------------------------------
