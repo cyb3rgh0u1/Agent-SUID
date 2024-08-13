@@ -1,9 +1,9 @@
 # Agent-SUID v1.0
 
-Agent-SUID is a Python script developed by **CyberGhoul** to assist security professionals in identifying potential privilege escalation vectors by discovering SUID binaries on a system. This tool allows users to input paths and checks for matches against a predefined wordlist of SUID binaries.
+Agent-SUID is a Python script developed by **CyberGhoul** to assist security professionals in identifying potential privilege escalation vectors by discovering exploitable SUID binaries on a system. This tool allows users to input SUID binary paths and checks for matches against a predefined wordlist of SUID binaries to determine if the SUID binary is exploitable or not.
 
 ## Features
-- **User Input:** Enter file paths one per line to check for SUID binaries.
+- **User Input:** Enter SUID binary paths one per line to check for exploitable SUID binaries.
 - **Wordlist Matching:** Matches the base name of the input paths against a predefined wordlist.
 - **Privilege Escalation Techniques:** Displays detailed information on potential privilege escalation techniques for matched binaries.
 - **Installation & Uninstallation:** Easily install or uninstall the script to `/usr/local/bin` with superuser permissions.
@@ -39,7 +39,7 @@ Once running, you can input paths to be checked. Press Enter on an empty line to
 ```
 $ agent-suid
 
-Agent-SUID v1.0 by CyberGhoul -  the ultimate tool for discovering SUID binaries on your system. This tool is designed to help security professionals identify potential privilege escalation vectors.
+Agent-SUID v1.0 by CyberGhoul - the ultimate tool for discovering exploitable SUID binaries on your system. This tool is designed to help security professionals identify potential privilege escalation vectors.
         
 Enter paths one per line (press Enter on an empty line to finish):
 
