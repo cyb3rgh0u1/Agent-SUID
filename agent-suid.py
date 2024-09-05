@@ -40,7 +40,7 @@ commands = {
         ./agetty -o -p -l /bin/sh -a root tty
         """,
 
-    "salpine": """salpine:
+    "alpine": """alpine:
         sudo install -m =xs $(which alpine) .
         LFILE=file_to_read
         ./alpine -F "$LFILE
